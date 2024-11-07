@@ -40,6 +40,11 @@ function Register() {
         }
     };
 
+    // using onClick to show alert
+    const showAlert = () => {
+        alert('Form submitted successfully!');
+    }
+
     return (
         <div className="d-flex justify-content-center align-items-center vh-100">
             <div className="border m-2 p-4 rounded" style={{ maxWidth: '400px', width: '100%' }}>
@@ -82,7 +87,7 @@ function Register() {
                         />
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-100"><Link to="/register" className='text-decoration-none text-white'>Register</Link></button>
+                    <button type="submit" className="btn btn-primary w-100" onClick={showAlert}><Link to="/register" className='text-decoration-none text-white'>Register</Link></button>
                     <p className='text-center pt-3 fs-6'>Already have an account? <Link to="/" className='text-decoration-none'>Login now</Link></p>
                 </form>
             </div>
