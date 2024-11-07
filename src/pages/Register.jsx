@@ -10,8 +10,6 @@ function Register() {
 
     const handleSubmit = async (e) => {
 
-        e.preventDefault();
-
         // Form data to send to the backend
         const formData = {
             username,
