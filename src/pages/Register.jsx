@@ -80,7 +80,7 @@ function Register() {
                         />
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-100">Register</button>
+                    <button type="submit" className="btn btn-primary w-100"><Link to="/" className='text-decoration-none text-white'>Register</Link></button>
                     <p className='text-center pt-3 fs-6'>Already have an account? <Link to="/" className='text-decoration-none'>Login now</Link></p>
                 </form>
             </div>
