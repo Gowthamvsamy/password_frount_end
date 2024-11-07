@@ -10,6 +10,7 @@ function Register() {
 
     const handleSubmit = async (e) => {
 
+        e.preventDefault();
 
         // Form data to send to the backend
         const formData = {
@@ -81,7 +82,7 @@ function Register() {
                         />
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-100"><Link to="/register" className='text-decoration-none'>Register</Link></button>
+                    <button type="submit" className="btn btn-primary w-100"><Link to="/register" className='text-decoration-none text-white'>Register</Link></button>
                     <p className='text-center pt-3 fs-6'>Already have an account? <Link to="/" className='text-decoration-none'>Login now</Link></p>
                 </form>
             </div>
