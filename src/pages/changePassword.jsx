@@ -20,7 +20,7 @@ function ChangePassword() {
 
             try {
                 // Change password logic here
-                const response = await fetch('http://localhost:3000/changepassword', {
+                const response = await fetch('https://password-back-end.onrender.com/changepassword', {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'

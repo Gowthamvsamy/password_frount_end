@@ -20,7 +20,7 @@ function Register() {
         };
 
         try {
-            const response = await fetch('http://localhost:3000/register', { // Replace with your backend URL
+            const response = await fetch('https://password-back-end.onrender.com/register', { // Replace with your backend URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

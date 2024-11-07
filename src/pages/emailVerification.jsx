@@ -15,7 +15,7 @@ function EmailVerification() {
 
 
     try {
-      const response = await fetch('http://localhost:3000/emailVerification', {
+      const response = await fetch('https://password-back-end.onrender.com/emailVerification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
