@@ -20,7 +20,7 @@ function Register() {
         };
 
         try {
-            const response = await fetch('https://password-back-end.onrender.com/register', { // Replace with your backend URL
+            const response = await fetch('https://password-back-end.onrender.com/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ function Register() {
             if (response.ok) {
                 // Handle success
                 console.log('User registered successfully');
-                navigate('/');
+                navigate('/login');
             } else {
                 // Handle error
                 console.error('Registration failed');
